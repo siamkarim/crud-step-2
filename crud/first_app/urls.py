@@ -4,5 +4,6 @@ from first_app import views
 app_name = "first_app"
 urlpatterns = [
     path('', views.index, name= "index"),
+    path('student_form',views.studentForm, name = "student_form")
 
 ]
