@@ -20,4 +20,10 @@ def student_form(request):
             return index(request)
 
     diction ={'title':"STUDENT_FORM",'student_form':form}
-    return render( request,'first_app/student_form.html',context=diction)    
+    return render( request,'first_app/student_form.html',context=diction)   
+
+
+def student_info(request,student_id):
+    student_info = Student.objects.get(pk=student_id)
+    diction ={'title':"Student info",'student_info':student_info}
+    return render( request,'first_app/student_info.html',context=diction)
