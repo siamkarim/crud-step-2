@@ -9,5 +9,5 @@ class Student(models.Model):
     phone = models.IntegerField()
 
 def __str__(self):
-    return str(self.pk)+ "" + self.first_name+ ""+ self.last_name
+    return str(self.pk)+ " " + self.first_name+ " "+ self.last_name
 
